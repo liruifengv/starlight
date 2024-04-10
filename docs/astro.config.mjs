@@ -34,11 +34,15 @@ export default defineConfig({
 	trailingSlash: 'always',
 	integrations: [
 		starlight({
-			title: 'Starlight',
+			title: {
+        'en': 'Starlight en',
+        'zh-CN': 'Starlight 中文',
+        'es': 'Starlight es',
+      },
 			logo: {
 				light: '/src/assets/logo-light.svg',
 				dark: '/src/assets/logo-dark.svg',
-				replacesTitle: true,
+				replacesTitle: false,
 			},
 			editLink: {
 				baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
